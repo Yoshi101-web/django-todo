@@ -2,5 +2,6 @@ from django.urls import path, include
 from .views import todo
 
 urlpatterns = [
-    path('a/', todo),
+    #TodoListは、クラス名にas_view()
+    path('list/', TodoList.as_view()),
 ]
