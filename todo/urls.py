@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import todo
+from .views import TodoList
 
 urlpatterns = [
     #TodoListは、クラス名にas_view()
