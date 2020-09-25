@@ -12,7 +12,7 @@
 {% block content %}
 {% for item in object_list %}
 <div class="container">
-
+    <a href="{% url 'create' %}" class="btn btn-info" role="button" aria-pressed="true">新規作成</a>
     <div class="alert alert-{{ item.priority }}" role="alert">
         <p>{{ item.title }} 期日：{{ item.duedate }}</p>
         <!-- pkは、primary key(id) -->
